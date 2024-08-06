@@ -1,0 +1,5 @@
+publisher_params:
+  ros__parameters:
+    samplingtime: 0.01
+    word: 'NRSL'
+
