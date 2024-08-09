@@ -22,7 +22,7 @@ Open the new terminal and do this commands:
 ```shell
 ros2 launch easy_pub_sub my_subscriber.launch.py
 ```
-    
+
 ## Else
 1. Tree structure
     ```
@@ -52,3 +52,21 @@ ros2 launch easy_pub_sub my_subscriber.launch.py
     rqt_grath
     ```
     
+
+# Control
+## P controller
+Open the new terminal and do this commands:
+```shell
+ros2 launch easy_pub_sub P_controller.launch.py
+```
+
+## PID controller & Get Parameter
+Open the new terminal and do these commands:
+- send parameter
+```shell
+ros2 launch easy_pub_sub publisher_parameter.launch.py
+```
+- PID controller
+```shell
+ros2 launch easy_pub_sub PID_controller.launch.py
+```
