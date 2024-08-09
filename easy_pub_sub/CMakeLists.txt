@@ -48,6 +48,8 @@ install(PROGRAMS
   launch/my_publisher.launch.py
   scripts/subscriber.py
   launch/my_subscriber.launch.py
+  scripts/tracking.py
+  launch/tracking.launch.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

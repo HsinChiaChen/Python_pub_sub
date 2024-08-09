@@ -15,12 +15,15 @@ class MinimalSubscriber(Node):
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
+        self.timer = self.create_timer(0.01, self.timer_callback)
+        self.i = 0
 
     def listener_callback(self, msg):
         full_string = msg.data  # 接收的消息，例如 "N:2697"
-        extracted_letter = full_string.split(':')[0]  # 提取字母部分 "N"
-        self.get_logger().info('I heard: "%s"' % extracted_letter)
+        self.get_logger().info('I heard: "%s"' % full_string)
 
+    def timer_callback(self):
+        self.i += 1
 
 def main(args=None):
     rclpy.init(args=args)
