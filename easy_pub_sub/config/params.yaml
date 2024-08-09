@@ -1,5 +1,7 @@
 publisher_params:
   ros__parameters:
     samplingtime: 0.01
-    word: 'NRSL'
+    Kp: 1.2
+    Ki: 0.005
+    Kd: 0.05
 

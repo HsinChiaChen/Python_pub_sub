@@ -44,10 +44,13 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/publisher.py
-  launch/my_publisher.launch.py
+#   scripts/publisher.py
+#   launch/my_publisher.launch.py
   scripts/subscriber.py
   launch/my_subscriber.launch.py
+
+  scripts/publisher_parameter.py
+  launch/publisher_parameter.launch.py
   scripts/tracking.py
   launch/tracking.launch.py
   DESTINATION lib/${PROJECT_NAME}

@@ -23,7 +23,7 @@ def generate_launch_description():
     node = launch_ros.actions.Node(
         name=node_name,
         package='easy_pub_sub',
-        executable='publisher.py',
+        executable='publisher_parameter.py',
         output='screen',
         emulate_tty=True,
         parameters=[config]
