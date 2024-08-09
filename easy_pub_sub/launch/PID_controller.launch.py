@@ -10,7 +10,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-    node_name='tracking'
+    node_name='PID_controller'
     
     # Get the path to the parameters YAML file
     config = os.path.join(
@@ -23,7 +23,7 @@ def generate_launch_description():
     node = launch_ros.actions.Node(
         name=node_name,
         package='easy_pub_sub',
-        executable='tracking.py',
+        executable='PID_controller.py',
         output='screen',
         emulate_tty=True,
         parameters=[config]
